@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: #302e2b;
+    color: white;
+}
+.chess{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+}
+.container{
+width: max-content;
+height: max-content;
+/* border: 2px solid black; */
+display: flex;
+flex-direction: column;
+}
+.row{
+   display: flex; 
+}
+
+.box{
+    width: 10vh;
+    height: 10vh;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    position: relative;
+}
+img{
+    width: 10vh;
+    height: 10vh;
+}
+.whiteimg{
+z-index: -1;
+}
+@media only screen and (max-width:540px) {
+     .chess{
+        display: flex;
+        width: 100vw;
+    height: 100vh;
+    align-items: center;
+
+     }
+    .box{
+        width:12.2vw;
+        height: 12.2vw;
+    }
+    img{
+        width: 12.2vw;
+        height:12.2vw;
+    }
+}
+.time1,.time2{
+    font-size: 25px;
+    padding: 5px 0px 10px 25px;
+    border-radius: 5px;
+    width: 115px;
+}
+.time{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 5px 0px;
+    font-weight: 600;
+}
+.time img{
+    width: 40px;
+    height: 40px;
+}
+.time1{
+    background-color: black;
+}
+.time2{
+    background-color: grey;
+}
+
